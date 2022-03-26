@@ -1,0 +1,239 @@
+body {
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+  background-color: #292d31;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 59px;
+  border-radius: 15px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: calc(100% - 138px);
+
+  border-radius: 15px;
+}
+
+.fillter {
+  max-width: 300px;
+  width: calc(100% - 138px);
+  background-color: #f8c629;
+  margin-left: 35px;
+  border-radius: 15px;
+}
+
+/* --------------------header----------------------- */
+
+header {
+  width: 100%;
+
+  padding: 17px 70px;
+  background-color: #2e3338;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-right: 40px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+header ul li:last-child a {
+  color: #399ee1;
+}
+
+header ul li a {
+  color: #f9f9f9;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.icon::before {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.house-icon::before {
+  content: url("../img/Home.svg");
+}
+.user-icon::before {
+  content: url("../img/user-sircle.svg");
+}
+
+.facebook-icon::before {
+  content: url("../img/facebook.svg");
+}
+
+/* -----------------------------header end-------------------- */
+
+/* -------------------------------main---------------------------- */
+
+main {
+  margin: 30px 0px;
+  background-color: #2e3338;
+  border-radius: 15px;
+}
+
+.banner {
+  /* background-image: url('../img/banner.jpg'); */
+  background-image: linear-gradient(#2e33389b, rgba(57, 63, 71, 0.7)),
+    url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  border-radius: 15px 15px 0px 0px;
+  padding: 58px 0px;
+}
+
+.banner p {
+  margin: 0 auto;
+
+  font-size: 22px;
+  color: #f9f9f9;
+  text-align: center;
+  width: 540px;
+  line-height: 2;
+  padding: 0px 30px;
+}
+
+
+.main-page-content{
+ margin-top: 80px;
+  padding: 0 69px;
+}
+
+.main-content{
+    margin-bottom: 77px;
+}
+.main-content:last-child{
+    padding-bottom: 156px;
+}
+.main-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 26px;
+}
+.main-items-header h3 {
+  margin-bottom: 7px;
+  color: #f8c629;
+  font-size: 22px;
+}
+.main-items-header h4 {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.main-items-header a {
+  color: #ffffff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.main-items-header a::before {
+  content: url("../img/arrow.svg");
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  margin-right: 7px;
+  padding-bottom: 3px;
+}
+
+/* .main-items-header a i{
+    font-size: 13px;
+    margin-right: 7px;
+    padding-top: 4px;
+} */
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  margin-bottom: 34px;
+  margin-right: 34px;
+  width: 300px;
+ 
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 11px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: #393f47;
+  
+
+  align-items: center;
+}
+
+.item:last-child {
+  margin-right: 0px;
+}
+
+.item img {
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit:contain;
+  display: inline-block;
+
+  
+}
+.item-picture {
+  margin-bottom: 12px;
+  height: 169px;
+}
+
+.item h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-bottom: 12px;
+  width: 210px;
+}
+
+.item p {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+ 
+.item span{
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.item span::before{
+    
+    content: '';
+    display: block;
+    width: 85px;
+    height: 1px;
+    background-color: #393F47;
+    margin-bottom: 15px;
+ 
+}
