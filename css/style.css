@@ -147,8 +147,6 @@ main {
 .main-items-header a {
   color: #ffffff;
   font-size: 13px;
-  display: flex;
-  align-items: center;
 }
 
 .main-items-header a::before {
@@ -157,7 +155,7 @@ main {
   width: 7px;
   height: 4px;
   margin-right: 7px;
-  padding-bottom: 3px;
+ 
 }
 
 /* .main-items-header a i{
