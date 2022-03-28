@@ -118,7 +118,7 @@ main {
 
 .main-page-content {
   margin-top: 80px;
-  padding: 0 69px;
+  
 }
 
 .main-content {
@@ -133,7 +133,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 26px;
+ 
+  padding: 0px 69px 26px 69px;
 }
 .main-items-header h3 {
   margin-bottom: 7px;
@@ -157,7 +158,25 @@ main {
   height: 4px;
   margin-right: 7px;
 }
+.see-all{
+ 
+  padding-right: 0px;
+  align-items: flex-start;
+  text-align: center;
+ position: relative;
 
+margin-top: -22px;
+ margin-bottom:88px ;
+}
+.see-all .main-items-subheader{
+position: absolute;
+
+left: 50%;
+transform: translatex(-50%);
+
+}
+.see-all a::before{
+  content:url('../img/Icon\ feather-chevron-down\ \(1\).svg')}
 /* .main-items-header a i{
     font-size: 13px;
     margin-right: 7px;
@@ -167,28 +186,32 @@ main {
 .items {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: center;
+  padding: 0px 52px;
 }
 .item {
   margin-bottom: 34px;
-  margin-right: 34px;
+  margin-right: 17px;
+  margin-left: 17px;
   width: 300px;
-  /* width: 23%; */
+  /* width: calc(25% - 34px); */
+
   line-height: 1.4;
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 11px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+ justify-content: space-between;
   text-align: center;
   color: #393f47;
-
+ 
   align-items: center;
 }
 
-.item:last-child {
-  margin-right: 0px;
-}
+
 
 .item img {
   border-radius: 8px;
@@ -263,14 +286,14 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 75px 110px;
+  padding: 0px 110px 75px;
 }
 
 .footer-location,
 .footer-contact,
 .footer-about {
   margin-right: 95px;
-  margin-top: 100px;
+  margin-top: 75px;
   width: 342px;
   display: flex;
   flex-direction: column;
