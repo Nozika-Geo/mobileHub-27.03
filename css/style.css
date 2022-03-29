@@ -3,6 +3,10 @@
   src: url("../fonts/bpg_mrgvlovani_caps_2010.ttf");
 }
 
+@font-face {
+  font-family: mySecondFont;
+  src: url("../fonts/bpg_arial_2009.ttf");
+}
 body {
   font-family: myFirstFont;
   background-color: #292d31;
@@ -118,7 +122,6 @@ main {
 
 .main-page-content {
   margin-top: 80px;
-  
 }
 
 .main-content {
@@ -133,7 +136,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
- 
+
   padding: 0px 69px 26px 69px;
 }
 .main-items-header h3 {
@@ -158,25 +161,24 @@ main {
   height: 4px;
   margin-right: 7px;
 }
-.see-all{
- 
+.see-all {
   padding-right: 0px;
   align-items: flex-start;
   text-align: center;
- position: relative;
+  position: relative;
 
-margin-top: -22px;
- margin-bottom:88px ;
+  margin-top: -22px;
+  margin-bottom: 88px;
 }
-.see-all .main-items-subheader{
-position: absolute;
+.see-all .main-items-subheader {
+  position: absolute;
 
-left: 50%;
-transform: translatex(-50%);
-
+  left: 50%;
+  transform: translatex(-50%);
 }
-.see-all a::before{
-  content:url('../img/Icon\ feather-chevron-down\ \(1\).svg')}
+.see-all a::before {
+  content: url("../img/Icon\ feather-chevron-down\ \(1\).svg");
+}
 /* .main-items-header a i{
     font-size: 13px;
     margin-right: 7px;
@@ -204,14 +206,12 @@ transform: translatex(-50%);
   padding: 11px;
   display: flex;
   flex-direction: column;
- justify-content: space-between;
+  justify-content: space-between;
   text-align: center;
   color: #393f47;
- 
+
   align-items: center;
 }
-
-
 
 .item img {
   border-radius: 8px;
@@ -297,7 +297,7 @@ footer {
   width: 342px;
   display: flex;
   flex-direction: column;
-  
+
   justify-content: space-between;
 }
 .footer-location {
@@ -412,7 +412,8 @@ h5.footer-header::before {
   margin-top: 23px;
   padding: 20px 0px;
 }
-.footer-contact span ,.footer-location span{
+.footer-contact span,
+.footer-location span {
   display: block;
   margin: 0 auto;
   width: 110px;
@@ -435,9 +436,84 @@ h5.footer-header::before {
   content: url("../img/Gmail_icon.svg.png");
 }
 
-.location::before{
-
+.location::before {
   content: url("../img/google-maps-logo.png");
 }
 
 /* ---------------------footer-------------------------- */
+
+/* ----------------Contact Page*------------------------*/
+
+.contactpageheader {
+  background-image: url("../img/nightsky_forcontact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px 15px 0px 0px;
+  padding: 57px 20px;
+}
+
+.contacpageroof {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacpageroof p {
+  color: #f8c629;
+  font-size: 16px;
+  max-width: 618px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.4;
+  padding: 11px 140px;
+}
+.contactlogo {
+  max-width: 618px;
+  width: 100%;
+  height: 110px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 0px 0px 15px 15px;
+}
+.contact-content h2 {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 55px 0px 11px 0px;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.contact-content p {
+  text-align: center;
+  max-width: 803px;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 15px;
+  color: #292d31;
+  font-family: mySecondFont;
+
+  line-height: 1.5;
+}
+.lower {
+  margin: 16px 0px 130px;
+  max-width: 488px;
+  width: 100%;
+}
+
+.contact {
+  margin-bottom: 15px;
+}
+
+.contact img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
